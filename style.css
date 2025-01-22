@@ -2321,7 +2321,7 @@ button {
     padding: 6px 0 6px;
     position: relative;
     top: -07%;
-    z-index: 0;
+    z-index: 1;
     text-wrap: wrap;
     text-align: center;
     font-size: 5rem;
@@ -2889,7 +2889,7 @@ button {
 
 @media(max-width:780px) {
     .tab-content2 {
-        display: block;
+        flex-wrap: wrap;
     }
 
 
