@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Gamming</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="main-header">
+            <ul class="header-ul">
+                <li class="header-li">
+                    <img class="logo" src="/assets/RE1Mu3b.png" alt="" height="20px" width="100%">
+                </li>
+                <li class="header-li" style="color: black;">|
+
+                </li>
+                <li class="header-li">
+                    <a href="index.html"><img class="logo" src="/assets/RW4ESm.png" alt="" height="20px"
+                            width="100%"></a>
+                </li>
+
+            </ul>
+
+            <ul class="header-ul ul2">
+
+
+                <li class="header-li"><a class="header-menus" href="">Support Home</a>
+
+                </li>
+                <li class="header-li"><a class="header-menus" href="">Xbox Status</a>
+
+                </li>
+
+
+
+
+
+                <li class="header-li"><a class="header-menus" href="">Help Topics<i class="fa-solid fa-caret-down"
+                            style="color: #000000;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li class="menu-item"><a href="#" class="menu-link">Support home</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Xbox status</a></li>
+                        <li class="menu-item dropdown">
+                            <a href="#" class="menu-link">Help topics <i class="fas fa-arrow-right"></i></a>
+                            <ul class="submenu">
+                                <li class="submenu-item"><a href="#" class="submenu-link">account & profile</a></li>
+                                <li class="submenu-item"><a href="#" class="submenu-link">subscription & billing</a>
+                                </li>
+                                <li class="submenu-item"><a href="#" class="submenu-link">hardware & networking</a></li>
+                                <li class="submenu-item"><a href="#" class="submenu-link">family & online safety</a>
+                                </li>
+                                <li class="submenu-item"><a href="#" class="submenu-link">games & apps</a></li>
+                                <li class="submenu-item"><a href="#" class="submenu-link">friends & social
+                                        activities</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="#" class="menu-link">Accessible gaming</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Xbox system updates</a></li>
+                    </ul>
+                </li>
+
+
+
+
+                <li class="header-li"><a class="header-menus" href="accessiblegaming.html">Accessible Gaming</a></li>
+                <li class="header-li"><a class="header-menus" href="">System Updates</a>
+
+                </li>
+
+
+
+
+
+
+
+
+
+
+
+            </ul>
+
+
+
+
+
+            </ul>
+
+
+
+            </li>
+
+
+
+            <ul class="header-ul">
+                <ul class="header-ul">
+
+
+
+                    <li class="header-li">
+                        <a href=""><i class="fa-solid fa-magnifying-glass"
+                                style="color: #000000; font-size: 20px;"></i></a>
+                    </li>
+                    <li class="header-li">
+                        <a href=""><i class="fa-solid fa-cart-shopping" style="color: #000000; font-size: 20px;
+                                padding: 0;margin: 0;"></i></a>
+                    </li>
+                    <li class="header-li">
+                        <a href=""><i class="fa-regular fa-circle-user"
+                                style="color: #000000; font-size: 20px;padding: 0; margin: 0;"></i></a>
+
+                    </li>
+                </ul>
+
+                <div class="hamburger d-xl-none" onclick="toggleSidebar()">
+                    &#9776; <!-- Hamburger Icon -->
+
+
+                    <!-- <aside class="sidebar">
+                        <li class="header-li"><a class="header-menus" href="">Games<i class="fa-solid fa-caret-down"
+                                    style="color: #000000;"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="joingamepass.html">join game pass</a></li>
+                                <li><a href="#">Browse games</a></li>
+                                <li><a href="gamepassultimate.html">game pass ultimate</a></li>
+                                <li><a href="pcgamepass.html">pc game pass</a></li>
+                                <li><a href="#">game pass core</a></li>
+                                <li><a href="#">deals with game pass</a></li>
+                                <li><a href="#">Xbox cloud gaming (beta)</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="header-li"><a class="header-menus" href="">Play</a></li>
+
+
+                        <li class="header-li"><a class="header-menus" href="">Game pass<i class="fa-solid fa-caret-down"
+                                    style="color: #000000;"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">games home</a></li>
+                                <li><a href="#">shop all console games</a></li>
+                                <li><a href="#">shop all pc games</a></li>
+                                <li><a href="#">cloud games</a></li>
+                                <li><a href="#">free-to-play games</a></li>
+                                <li><a href="#">optimized games</a></li>
+                                <li><a href="#">backward compatible games</a></li>
+                                <li><a href="#">sales & specials</a></li>
+                                <li><a href="#">redeem code </a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="dropdown-container">
+                            <a class="dropdown-toggle2" href="#">Devices<i class="fa-solid fa-caret-down"
+                                    style="color: #000000;"></i> </a>
+                            <ul class="three-column-menu">
+                                <div>
+                                    <p class="menu-heading">Consoles</p>
+                                    <li><a href="#">Xbox consoles</a></li>
+                                    <li><a href="#">Xbox Series X</a></li>
+                                    <li><a href="#">Xbox Series S</a></li>
+                                    <li><a href="#">Xbox All Access</a></li>
+                                    <li><a href="#">Shop all consoles</a></li>
+                                    <li><a href="#">Help Me Choose</a></li>
+                                    <li><a href="#">Where to buy</a></li>
+                                </div>
+                                <div>
+                                    <p class="menu-heading">Accessories</p>
+                                    <li><a href="#">Shop all accessories</a></li>
+                                    <li><a href="#">Design your controller</a></li>
+                                    <li><a href="#">Controllers</a></li>
+                                    <li><a href="#">Headsets</a></li>
+                                    <li><a href="#">Hard drives & storage</a></li>
+                                    <li><a href="#">Mobile gaming accessories</a></li>
+                                </div>
+                                <div>
+                                    <p class="menu-heading">PC Devices</p>
+                                    <li><a href="#">Gaming PCs</a></li>
+                                </div>
+                            </ul>
+                        </li>
+
+                    </aside> -->
+
+                </div>
+            </ul>
+        </div>
+    </header>
+
+
+    <center>
+
+        <div class="container-wakti">
+
+
+
+            <div class="weird-container-435">
+                <!-- Headings -->
+                <div class="top-heading-977">
+                    <h1 class="main-title-880">Accessible gaming on Xbox and Windows</h1>
+                    <h3 class="sub-title-992">What can we help you with?</h3>
+                </div>
+
+                <!-- Cards Container -->
+                <div class="flexy-box-672">
+                    <!-- Card 1 -->
+                    <div class="funky-card-123">
+                        <img src="assets/cffe429f-6f09-47d5-8d78-59ced32e9745.jpg" alt="Card 1">
+                        <div class="text-box-456">
+                            <h2 class="funky-title-001">Controllers and other inputs</h2>
+                            <p class="funky-text-009">Get info about gameplay, connections, troubleshooting, and more.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="funky-card-123">
+                        <img src="assets/58aa75bd-6afb-4b43-8018-2a9c9ebb2910.jpg" alt="Card 2">
+                        <div class="text-box-456">
+                            <h2 class="funky-title-001">Stay focused on gaming</h2>
+                            <p class="funky-text-009">Find out how to ditch the distractions and stay in the game.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <section class="custom-section-unique">
+                <h1 class="main-heading-unique">
+                    Find Xbox and Windows features for your specific needs</h1>
+                <div class="flex-container-unique">
+                    <div class="card-unique">
+                        <img src="assets/059c0d43-8517-4c94-9842-370e5691e75f.jpg" alt="Card 1"
+                            class="card-image-unique" />
+                        <h3 class="card-heading-unique">Customize your visual experience</h3>
+                    </div>
+                    <div class="card-unique">
+                        <img src="assets/daf06807-2067-4a03-8541-84f3a7d8a619.png" alt="Card 2"
+                            class="card-image-unique" />
+                        <h3 class="card-heading-unique">
+
+                            Configure your audio experience</h3>
+                    </div>
+                    <div class="card-unique">
+                        <img src="assets/bc1e122f-3ce9-4df1-aab0-b817451ab135.jpg" alt="Card 3"
+                            class="card-image-unique" />
+                        <h3 class="card-heading-unique">
+
+                            Check out our features for neurodiversity</h3>
+                    </div>
+                    <div class="card-unique">
+                        <img src="assets/4159295d-a6b4-4436-abfb-116f9aafeaa9.png" alt="Card 4"
+                            class="card-image-unique" />
+                        <h3 class="card-heading-unique">
+
+                            Enhance your gaming chat experience</h3>
+                    </div>
+                    <div class="card-unique">
+                        <img src="assets/fa3de8b9-419a-44d6-be61-c3eb1193024e.jpg" alt="Card 5"
+                            class="card-image-unique" />
+                        <h3 class="card-heading-unique">
+
+                            Discover features for fine motor skills</h3>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+
+
+
+            <div class="weird-container-435">
+                <!-- Headings -->
+                <div class="top-heading-977">
+                    <h3 class="sub-title-992">More features and tips</h3>
+                </div>
+
+                <!-- Cards Container -->
+                <div class="flexy-box-672">
+                    <!-- Card 1 -->
+                    <div class="funky-card-123">
+                        <img src="assets/0d9e4835-c3b0-4c24-b565-073cbf595c17.jpg" alt="Card 1">
+                        <div class="text-box-456">
+                            <h2 class="funky-title-001">Find games with accessibility features</h2>
+                            <p class="funky-text-009">We'll help you find titles that meet your needs and interests.</p>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="funky-card-123">
+                        <img src="assets/baf078a6-ff98-468d-8d20-4be6488719f8.jpg" alt="Card 2">
+                        <div class="text-box-456">
+                            <h2 class="funky-title-001">Community & other info</h2>
+                            <p class="funky-text-009">Get helpful tips and tricks from other players.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+    </center>
+
+
+
+    <div class="faq-container-ftch-y">
+        <h1 class="faqs-heading-ftch-y">New to Xbox?</h1>
+
+        <!-- FAQ Item 1 -->
+        <div class="faq-item-ftch-y">
+            <button class="faq-question-ftch-y">
+                How accessibility settings affect Xbox gaming on PC
+            </button>
+            <div class="faq-answer-ftch-y" style="display: none;">
+                <p>Xbox Game Pass is a subscription service that gives access to a library of games.</p>
+            </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="faq-item-ftch-y">
+            <button class="faq-question-ftch-y">
+                Get support from the Disability Answer Desk
+            </button>
+            <div class="faq-answer-ftch-y" style="display: none;">
+                <p>
+                    Visit <a href="https://www.xbox.com/regions" class="c-hyperlink">Xbox regions</a> for details on
+                    market availability.
+                </p>
+            </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="faq-item-ftch-y">
+            <button class="faq-question-ftch-y">
+                Players tell their stories
+            </button>
+            <div class="faq-answer-ftch-y" style="display: none;">
+                <p>
+                    Browse the latest games at <a href="https://www.xbox.com/apps/xbox-app-on-pc"
+                        class="c-hyperlink">Xbox app on Windows PC</a>,
+                    <a href="https://www.xbox.com/xbox-game-pass/games?=allgames"
+                        class="c-hyperlink-ftch-y">xbox.com</a>, on
+                    your console,
+                    or on the <a href="https://www.xbox.com/apps/xbox-app-on-mobile" class="c-hyperlink-ftch-y">Xbox app
+                        on
+                        mobile</a>.
+                </p>
+            </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+
+        <!-- FAQ Item 5 -->
+        <div class="faq-item-ftch-y">
+            <button class="faq-question-ftch-y">
+                Xbox Accessibility Insider League FAQ
+            </button>
+            <div class="faq-answer-ftch-y" style="display: none;">
+                <p>
+                    Game Pass Ultimate members automatically receive the entitlement for EA Play on console and can
+                    browse
+                    and download games through the Game Pass experience on your console.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="footer-sections">
+            <div class="footer-column">
+                <h3>Customer support</h3>
+                <ul>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Xbox status</a></li>
+                    <li><a href="#">Xbox forums</a></li>
+                    <li><a href="#">Your Microsoft account</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Xbox News</a></li>
+                    <li><a href="#">Xbox Support</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Community Standards</a></li>
+                    <li><a href="#">Photosensitive Seizure Warning</a></li>
+                    <li><a href="#">Product Safety</a></li>
+                </ul>
+            </div>
+
+
+            <div class="footer-column">
+                <h3>For Developers</h3>
+                <ul>
+                    <li><a href="#">Games</a></li>
+                    <li><a href="#">ID@Xbox
+                        </a></li>
+
+                    <li><a href="">Windows</a></li>
+                    <li><a href="">Creators Program</a></li>
+                    <li><a href="">
+                            Designed for Xbox</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

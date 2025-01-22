@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deals With Game Pass</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<style>
+    .game-pass-container {
+        padding: 50px 0px;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 100%;
+        height: 100px;
+    }
+
+    .game-pass-title {
+        font-size: 64px;
+        position: relative;
+        top: 30px;
+        line-height: 70px;
+        padding: 0px;
+        margin: 0px auto;
+        font-weight: bolder;
+        color: #008000;
+
+
+    }
+
+    .game-pass-description {
+        font-size: 21px;
+        font-weight: bold;
+        color: black;
+        background-color: #e5e5e5;
+        text-transform: capitalize;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        width: 100%;
+    }
+
+
+    .game-pass-description p {
+        width: 60%;
+    }
+
+    .game-pass-title::after {
+        content: "";
+        display: block;
+        width: 50px;
+        height: 10px;
+        transform: skew(-30deg);
+        background-color: #008000;
+        margin: 0px auto;
+    }
+
+
+
+    @media (max-width: 768px) {
+        .game-pass-title {
+            font-size: 28px;
+        }
+
+        .game-pass-description {
+            font-size: 14px;
+            width: 100%;
+        }
+
+        .game-pass-description p {
+            width: 90%;
+        }
+    }
+
+
+
+    .tabs-container-cit {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .tab-button-cit {
+        padding: 10px 20px;
+        margin: 0 10px;
+        font-size: 16px;
+        cursor: pointer;
+        background-color: transparent;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .tab-button-cit.active,
+    .tab-button-cit:hover {
+        text-decoration: underline #5aa45a;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 2px;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="main-header">
+            <ul class="header-ul">
+                <li class="header-li"><img class="logo" src="/assets/RE1Mu3b.png" alt="" height="20px" width="100%">
+                </li>
+                <li class="header-li" style="color: black;">|</li>
+                <li class="header-li"><a href="index.html"><img class="logo" src="/assets/RW4ESm.png" alt=""
+                            height="20px" width="100%"></a></li>
+
+            </ul>
+
+            <ul class="header-ul ul2">
+
+
+                <li class="header-li"><a class="header-menus" href="">Games<i class="fa-solid fa-caret-down"
+                            style="color: #000000;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="joingamepass.html">join game pass</a></li>
+                        <li><a href="#">Browse games</a></li>
+                        <li><a href="gamepassultimate.html">game pass ultimate</a></li>
+                        <li><a href="pcgamepass.html">pc game pass</a></li>
+                        <li><a href="gamepasscore.html">game pass core</a></li>
+                        <li><a href="dealswithgamepass.html">deals with game pass</a></li>
+                        <li><a href="#">Xbox cloud gaming (beta)</a></li>
+                    </ul>
+                </li>
+                <li class="header-li"><a class="header-menus" href="">Game pass<i class="fa-solid fa-caret-down"
+                            style="color: #000000;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="gameshome.html">games home</a></li>
+                        <li><a href="#">shop all console games</a></li>
+                        <li><a href="#">shop all pc games</a></li>
+                        <li><a href="#">cloud games</a></li>
+                        <li><a href="#">free-to-play games</a></li>
+                        <li><a href="xbox one page/optimizegames.html">optimized games</a></li>
+                        <li><a href="#">backward compatible games</a></li>
+                        <li><a href="#">sales & specials</a></li>
+                        <li><a href="redeemcode.html">redeem code </a></li>
+                    </ul>
+                </li>
+
+
+
+
+                <li class="dropdown-container">
+                    <a class="dropdown-toggle2" href="#">Devices<i class="fa-solid fa-caret-down"
+                            style="color: #000000;"></i> </a>
+                    <ul class="three-column-menu">
+                        <div>
+                            <p class="menu-heading">Consoles</p>
+                            <li><a href="#">Xbox consoles</a></li>
+                            <li><a href="#">Xbox Series X</a></li>
+                            <li><a href="#">Xbox Series S</a></li>
+                            <li><a href="#">Xbox All Access</a></li>
+                            <li><a href="#">Shop all consoles</a></li>
+                            <li><a href="helpmechoose.html">Help Me Choose</a></li>
+                            <li><a href="#">Where to buy</a></li>
+                        </div>
+                        <div>
+                            <p class="menu-heading">Accessories</p>
+                            <li><a href="#">Shop all accessories</a></li>
+                            <li><a href="#">Design your controller</a></li>
+                            <li><a href="#">Controllers</a></li>
+                            <li><a href="#">Headsets</a></li>
+                            <li><a href="#">Hard drives & storage</a></li>
+                            <li><a href="#">Mobile gaming accessories</a></li>
+                        </div>
+                        <div>
+                            <p class="menu-heading">PC Devices</p>
+                            <li><a href="#">Gaming PCs</a></li>
+                        </div>
+                    </ul>
+                </li>
+
+
+
+
+
+
+                <li class="header-li"><a class="header-menus" href="">Play</a></li>
+                <li class="header-li"><a class="header-menus" href="">Store<i class="fa-solid fa-caret-down"
+                            style="color: #000000;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">shop blessed friday sale</a></li>
+                        <li><a href="#">shop games</a></li>
+                        <li><a href="#">shop game pass</a></li>
+                        <li><a href="#">shop consoles</a></li>
+                        <li><a href="#">shop accessories</a></li>
+                        <li><a href="#">shop deals</a></li>
+                    </ul>
+                </li>
+
+                <li class="dropdown-container">
+                    <a class="dropdown-toggle2" href="#">Community<i class="fa-solid fa-caret-down"
+                            style="color: #000000;"></i> </a>
+                    <ul class="three-column-menu  menu2">
+                        <div>
+                            <p class="menu-heading">Community</p>
+                            <li><a href="#">Xbox community</a></li>
+                            <li><a href="#">FanFest</a></li>
+                            <li><a href="#">Xbox News </a></li>
+                            <li><a href="#">Sustainability</a></li>
+
+                        </div>
+                        <div>
+                            <p class="menu-heading">For Everyone</p>
+                            <li><a href="#">Our Philosophy</a></li>
+                            <li><a href="#">Family Hub</a></li>
+                            <li><a href="#">Accessible gaming</a></li>
+                            <li><a href="#">Community Standards</a></li>
+
+                        </div>
+                        <div>
+                            <p class="menu-heading">Xbox Gear Shop</p>
+                            <li><a href="#">Shop Gear</a></li>
+                        </div>
+                        <div>
+                            <p class="menu-heading">Apps & Entertainment</p>
+                            <li><a href="#">Xbox App on mobile</a></li>
+                            <li><a href="#">Xbox app on windows pc</a></li>
+                            <li><a href="#">Xbox app on TVs</a></li>
+                            <li><a href="#">Xbox family settings app</a></li>
+                            <li><a href="#">Console entertainment apps</a></li>
+
+                        </div>
+                    </ul>
+                </li>
+
+
+
+
+
+
+
+                <li class="header-li"><a class="header-menus" href="">Support<i class="fa-solid fa-caret-down"
+                            style="color: #000000;"></i></a>
+                    <ul class="dropdown-menu">
+                        <li class="menu-item"><a href="#" class="menu-link">Support home</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Xbox status</a></li>
+                        <li class="menu-item dropdown">
+                            <a href="#" class="menu-link">Help topics <i class="fas fa-arrow-right"></i></a>
+                            <ul class="submenu">
+                                <li class="submenu-item"><a href="#" class="submenu-link">account & profile</a></li>
+                                <li class="submenu-item"><a href="#" class="submenu-link">subscription & billing</a>
+                                </li>
+                                <li class="submenu-item"><a href="#" class="submenu-link">hardware & networking</a></li>
+                                <li class="submenu-item"><a href="#" class="submenu-link">family & online safety</a>
+                                </li>
+                                <li class="submenu-item"><a href="#" class="submenu-link">games & apps</a></li>
+                                <li class="submenu-item"><a href="#" class="submenu-link">friends & social
+                                        activities</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="#" class="menu-link">Accessible gaming</a></li>
+                        <li class="menu-item"><a href="#" class="menu-link">Xbox system updates</a></li>
+                    </ul>
+                </li>
+
+                <li class="header-li"><a class="header-menus" href="">More<i class="fa-solid fa-caret-down"
+                            style="color: #000000;"></i></a>
+
+                    <ul class="dropdown-menu">
+
+                        <li class="menu-item dropdown">
+                            <a href="#" class="menu-link">my xbox <i class="fas fa-arrow-right"></i></a>
+                            <ul class="submenu">
+                                <li class="submenu-item"><a href="#" class="submenu-link">profile</a></li>
+
+                                <li class="submenu-item"><a href="#" class="submenu-link">reward</a></li>
+                                <li class="submenu-item"><a href="#" class="submenu-link">xbox mastercard</a></li>
+                                <li class="submenu-item"><a href="xboxwishlist.html" class="submenu-link">xbox wish lists</a></li>
+
+                            </ul>
+                        <li class="menu-item dropdown">
+                            <a href="#" class="menu-link">Developers <i class="fas fa-arrow-right"></i></a>
+                            <ul class="submenu">
+
+                                <li class="submenu-item"><a href="#" class="submenu-link">games</a></li>
+                                <li class="submenu-item"><a href="designedforxbox.html" class="submenu-link">designed for xbox</a></li>
+                            </ul>
+
+                        </li>
+
+                </li>
+            </ul>
+
+
+
+            <li class="dropdown-container">
+                <a class="dropdown-toggle2" href="#">all microsoft<i class="fa-solid fa-caret-down"
+                        style="color: #000000;"></i> </a>
+                <ul class="three-column-menu  menu3">
+
+
+                    <div>
+                        <p class="menu-heading">Software</p>
+                        <li><a href="#">Windows Apps</a></li>
+                        <li><a href="#">Ai</a></li>
+                        <li><a href="#">Outlook </a></li>
+                        <li><a href="#">One Drive</a></li>
+                        <li><a href="#">Microsoft Teams</a></li>
+                        <li><a href="#">One Note</a></li>
+                        <li><a href="#">Microsoft edge</a></li>
+                        <li><a href="#">Skype</a></li>
+
+
+                    </div>
+                    <div>
+                        <p class="menu-heading">PC's & Devices</p>
+                        <li><a href="#">Computer's</a></li>
+                        <li><a href="#">Shop Xbox</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">VR & mixed reality </a></li>
+                        <li><a href="#">Certified Refurbished</a></li>
+                        <li><a href="#">Trade-in for cash</a></li>
+
+                    </div>
+                    <div>
+                        <p class="menu-heading">Entertainment</p>
+                        <li><a href="#">Xbox Game Pass Ultimate</a></li>
+                        <li><a href="#">PC Game Pass</a></li>
+                        <li><a href="#">Xbox games</a></li>
+                        <li><a href="#">PC and Windows games</a></li>
+                        <li><a href="#">Movies & TV</a></li>
+                    </div>
+                    <div>
+                        <p class="menu-heading">Bussiness</p>
+                        <li><a href="#">Microsoft Cloud</a></li>
+                        <li><a href="#">Microsoft Security</a></li>
+                        <li><a href="#">Dynamics 365</a></li>
+                        <li><a href="#">Microsoft 365 for bussiness</a></li>
+                        <li><a href="#">Microsoft Power Platform</a></li>
+                        <li><a href="#">Windows 365</a></li>
+                        <li><a href="#">Microsoft Industry</a></li>
+                        <li><a href="#">Small Bussiness</a></li>
+
+                    </div>
+
+                    <div>
+                        <p class="menu-heading">Developer & IT</p>
+                        <li><a href="#">Azure</a></li>
+                        <li><a href="#">Developer Center</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Microsoft Learn</a></li>
+                        <li><a href="#">Microsoft Tech Community</a></li>
+                        <li><a href="#">Azure Marketplace</a></li>
+                        <li><a href="#">AppSource</a></li>
+                        <li><a href="#">Visual Studio</a></li>
+
+                    </div>
+                    <div>
+                        <p class="menu-heading">Other</p>
+                        <li><a href="#">Microsoft Rewards</a></li>
+                        <li><a href="#">Free downloads & Security</a></li>
+                        <li><a href="#">Education</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                        <li><a href="#">Licensing</a></li>
+                        <li><a href="#">Unlocked stories</a></li>
+
+
+                    </div>
+
+
+                    <div class="dropdown-footer">
+                        <span>
+                            <a href="#">View Sitemap</a>
+                        </span>
+                    </div>
+                </ul>
+            </li>
+
+            </ul>
+
+
+
+            </li>
+
+
+
+            <ul class="header-ul">
+                <ul class="header-ul">
+
+
+
+                    <li class="header-li">
+                        <a href=""><i class="fa-solid fa-magnifying-glass"
+                                style="color: #000000; font-size: 20px;"></i></a>
+                    </li>
+                    <li class="header-li">
+                        <a href=""><i class="fa-solid fa-cart-shopping" style="color: #000000; font-size: 20px;
+                                padding: 0;margin: 0;"></i></a>
+                    </li>
+                    <li class="header-li">
+                        <a href=""><i class="fa-regular fa-circle-user"
+                                style="color: #000000; font-size: 20px;padding: 0; margin: 0;"></i></a>
+
+                    </li>
+                </ul>
+
+                <div class="hamburger d-xl-none" onclick="toggleSidebar()">
+                    &#9776; <!-- Hamburger Icon -->
+
+
+                    <!-- <aside class="sidebar">
+                        <li class="header-li"><a class="header-menus" href="">Games<i class="fa-solid fa-caret-down"
+                                    style="color: #000000;"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="joingamepass.html">join game pass</a></li>
+                                <li><a href="#">Browse games</a></li>
+                                <li><a href="gamepassultimate.html">game pass ultimate</a></li>
+                                <li><a href="pcgamepass.html">pc game pass</a></li>
+                                <li><a href="#">game pass core</a></li>
+                                <li><a href="#">deals with game pass</a></li>
+                                <li><a href="#">Xbox cloud gaming (beta)</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="header-li"><a class="header-menus" href="">Play</a></li>
+
+
+                        <li class="header-li"><a class="header-menus" href="">Game pass<i class="fa-solid fa-caret-down"
+                                    style="color: #000000;"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">games home</a></li>
+                                <li><a href="#">shop all console games</a></li>
+                                <li><a href="#">shop all pc games</a></li>
+                                <li><a href="#">cloud games</a></li>
+                                <li><a href="#">free-to-play games</a></li>
+                                <li><a href="#">optimized games</a></li>
+                                <li><a href="#">backward compatible games</a></li>
+                                <li><a href="#">sales & specials</a></li>
+                                <li><a href="#">redeem code </a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="dropdown-container">
+                            <a class="dropdown-toggle2" href="#">Devices<i class="fa-solid fa-caret-down"
+                                    style="color: #000000;"></i> </a>
+                            <ul class="three-column-menu">
+                                <div>
+                                    <p class="menu-heading">Consoles</p>
+                                    <li><a href="#">Xbox consoles</a></li>
+                                    <li><a href="#">Xbox Series X</a></li>
+                                    <li><a href="#">Xbox Series S</a></li>
+                                    <li><a href="#">Xbox All Access</a></li>
+                                    <li><a href="#">Shop all consoles</a></li>
+                                    <li><a href="#">Help Me Choose</a></li>
+                                    <li><a href="#">Where to buy</a></li>
+                                </div>
+                                <div>
+                                    <p class="menu-heading">Accessories</p>
+                                    <li><a href="#">Shop all accessories</a></li>
+                                    <li><a href="#">Design your controller</a></li>
+                                    <li><a href="#">Controllers</a></li>
+                                    <li><a href="#">Headsets</a></li>
+                                    <li><a href="#">Hard drives & storage</a></li>
+                                    <li><a href="#">Mobile gaming accessories</a></li>
+                                </div>
+                                <div>
+                                    <p class="menu-heading">PC Devices</p>
+                                    <li><a href="#">Gaming PCs</a></li>
+                                </div>
+                            </ul>
+                        </li>
+
+                    </aside> -->
+
+                </div>
+            </ul>
+        </div>
+    </header>
+
+    <div class="game-pass-container">
+        <!-- Logo -->
+        <div class="logo">
+            <img src="assets/15ce2a8b-b60f-4276-b7e3-f54088680c1e.svg" alt="Game Pass Logo">
+        </div>
+        <!-- Title -->
+        <h1 class="game-pass-title">
+            DEALS WITH GAME PASS
+        </h1>
+        <!-- Description -->
+
+        <div class="game-pass-description">
+            <p>
+                Enjoy member deals and discounts with Game Pass. Explore which offers are available with your Game Pass
+                plan.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="carousel-wrapper-cit  carousel-wrapper-for-game-pass-ultimate-banner-cit"
+        style="background-color: transparent !important;">
+        <center>
+
+            <div class="challa-cit">
+                <h1 class="car-head-cit" style="color: #111;">Save on games in the Game Pass catalog</h1>
+                <p class="rishta-cit" style="color: #111;">Save up to 20% off select games in the Game Pass catalog with
+                    Game Pass Ultimate,
+                    Game Pass for Console, and PC Game Pass. Buy your favorite games before they leave the Game Pass
+                    catalog to own forever. (Not available with Game Pass Standard or Game Pass Core.)
+
+                </p>
+
+
+            </div>
+        </center>
+
+
+        <!-- Tabs Section -->
+        <div class="tabs-container-cit">
+            <button class="tab-button-cit active" onclick="showGames('console-games')">Console Games</button>
+            <button class="tab-button-cit" onclick="showGames('pc-games')">PC Games</button>
+        </div>
+
+
+        <button class="button left-cit" onclick="scrollCarousel(-1)">&#10094;</button>
+        <center>
+            <div class="carousel-container-cit console-games" id="carousel-cit">
+
+
+
+
+                <div class="carousel-item-cit">
+                    <img src="assets/apps.10245.14461740201982510.10849893-1b50-4a26-b3f1-c1402fe39b3e.jpg"
+                        alt="Overthrown">
+                    <div class="carousel-item-content-cit">
+                        <h3>Gta Online </h3>
+                        <p>Action & Adventure</p>
+                    </div>
+                </div>
+
+
+
+                <div class="carousel-item-cit">
+                    <img src="assets/apps.17984.13658153007394895.2c282c9c-7877-44a7-b68d-576fd158cef8.jpg"
+                        alt="EA Sports WRC">
+                    <div class="carousel-item-content-cit">
+                        <h3>EA SPORTS™ NBA</h3>
+                        <p>Basketball & Sports</p>
+                    </div>
+                </div>
+                <div class="carousel-item-cit">
+                    <img src="assets/apps.32034.68565266983380288.0f5ef871-88c0-45f7-b108-6aacbc041fcf.jpg"
+                        alt="Crash Nitro Fueled">
+                    <div class="carousel-item-content-cit">
+                        <h3>Grand Auto Theft V</h3>
+                        <p>Action & Adventure</p>
+                    </div>
+                </div>
+                <div class="carousel-item-cit">
+                    <img src="assets/apps.34695.68182501197884443.ac728a87-7bc1-4a0d-8bc6-0712072da93c.jpg"
+                        alt="Aliens Dark Descent">
+                    <div class="carousel-item-content-cit">
+                        <h3>RDR2</h3>
+                        <p>CowBoy</p>
+                    </div>
+                </div>
+                <div class="carousel-item-cit">
+                    <img src="assets/apps.44684.65170969132831011.ecb621da-0ebf-4e9a-9c6b-5366a71d333b.jpg"
+                        alt="Nine Sols">
+                    <div class="carousel-item-content-cit">
+                        <h3>Nine Sols</h3>
+                        <p>Action & Adventure</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item-cit">
+                    <img src="assets/apps.5026.13921791456696433.7d9f4d57-76cd-411d-8615-f91c745452f2.jpg"
+                        alt="Nine Sols">
+                    <div class="carousel-item-content-cit">
+                        <h3>Nine Sols</h3>
+                        <p>Action & Adventure</p>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item-cit">
+                    <img src="assets/apps.53095.13850085746326678.06e2dc5c-7997-46e9-a8e6-0e48b57cb13b.jpg"
+                        alt="Nine Sols">
+                    <div class="carousel-item-content-cit">
+                        <h3>Nine Sols</h3>
+                        <p>Action & Adventure</p>
+                    </div>
+                </div>
+
+
+
+
+                <div class="carousel-item-cit">
+                    <img src="assets/apps.61448.14365278454952493.fad8a383-13cf-494d-bf22-a894e53fa5ac.jpg"
+                        alt="Nine Sols">
+                    <div class="carousel-item-content-cit">
+                        <h3>Nine Sols</h3>
+                        <p>Action & Adventure</p>
+                    </div>
+                </div>
+
+
+
+                <div class="carousel-item-cit">
+                    <img src="assets/apps.59357.13895334412764328.559da51b-cee3-4463-b8c6-75819f96d69c.7038b9c7-f3b8-44d2-a1c8-8603d9d132af"
+                        alt="Nine Sols">
+                    <div class="carousel-item-content-cit">
+                        <h3>Nine Sols</h3>
+                        <p>Action & Adventure</p>
+                    </div>
+                </div>
+
+
+
+                <div class="carousel-item-cit">
+                    <img src="assets/apps.53095.13850085746326678.06e2dc5c-7997-46e9-a8e6-0e48b57cb13b.jpg"
+                        alt="Nine Sols">
+                    <div class="carousel-item-content-cit">
+                        <h3>Nine Sols</h3>
+                        <p>Action & Adventure</p>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </center>
+
+        <center>
+
+
+
+            <div class="carousel-container-cit pc-games" id="carousel-cit" style="display: none;">
+
+
+                <div class="carousel-item-cit">
+                    <img src="assets/apps.61448.14365278454952493.fad8a383-13cf-494d-bf22-a894e53fa5ac.jpg"
+                        alt="Nine Sols">
+                    <div class="carousel-item-content-cit">
+                        <h3>Nine Sols</h3>
+                        <p>Action & Adventure</p>
+                    </div>
+                </div>
+
+
+
+                <div class="carousel-item-cit">
+                    <img src="assets/apps.59357.13895334412764328.559da51b-cee3-4463-b8c6-75819f96d69c.7038b9c7-f3b8-44d2-a1c8-8603d9d132af"
+                        alt="Nine Sols">
+                    <div class="carousel-item-content-cit">
+                        <h3>Nine Sols</h3>
+                        <p>Action & Adventure</p>
+                    </div>
+                </div>
+
+
+
+                <div class="carousel-item-cit">
+                    <img src="assets/apps.53095.13850085746326678.06e2dc5c-7997-46e9-a8e6-0e48b57cb13b.jpg"
+                        alt="Nine Sols">
+                    <div class="carousel-item-content-cit">
+                        <h3>Nine Sols</h3>
+                        <p>Action & Adventure</p>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item-cit">
+                    <img src="assets/apps.10245.14461740201982510.10849893-1b50-4a26-b3f1-c1402fe39b3e.jpg"
+                        alt="Overthrown">
+                    <div class="carousel-item-content-cit">
+                        <h3>Gta Online </h3>
+                        <p>Action & Adventure</p>
+                    </div>
+                </div>
+
+
+                <div class="carousel-item-cit">
+                    <img src="assets/apps.10245.14461740201982510.10849893-1b50-4a26-b3f1-c1402fe39b3e.jpg"
+                        alt="Overthrown">
+                    <div class="carousel-item-content-cit">
+                        <h3>Gta Online </h3>
+                        <p>Action & Adventure</p>
+                    </div>
+                </div>
+
+
+
+                <div class="carousel-item-cit">
+                    <img src="assets/apps.17984.13658153007394895.2c282c9c-7877-44a7-b68d-576fd158cef8.jpg"
+                        alt="EA Sports WRC">
+                    <div class="carousel-item-content-cit">
+                        <h3>EA SPORTS™ NBA</h3>
+                        <p>Basketball & Sports</p>
+                    </div>
+                </div>
+                <div class="carousel-item-cit">
+                    <img src="assets/apps.32034.68565266983380288.0f5ef871-88c0-45f7-b108-6aacbc041fcf.jpg"
+                        alt="Crash Nitro Fueled">
+                    <div class="carousel-item-content-cit">
+                        <h3>Grand Auto Theft V</h3>
+                        <p>Action & Adventure</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </center>
+
+        <button class="button right-cit" onclick="scrollCarousel(1)">&#10095;</button>
+
+    </div>
+    <section class="pare">
+        <center>
+            <!-- Page 1 -->
+            <div id="game-gallery-page-1" class="game-gallery-container pagination-page">
+                <div class="unstop">
+                    <h2 class="shape">Are you ready to play?</h2>
+                    <p class="shape2">Enjoy hundreds of hours of gameplay with an incredible catalogue of celebrated
+                        titles from long-standing franchises like Fallout, Halo, and Psychonauts, alongside
+                        fan-favourites like Ori and the Will of the Wisps and Grounded.
+
+                    </p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="assets/apps.7220.66617542682682743.811213f2-2c45-4145-973d-fe3e3774b196.jpg"
+                            alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Crash™ Team Racing Nitro-Fueled</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="assets/apps.9700.14591801423393397.e1044226-28d7-42f6-a357-7102f7d1a4b3.jpg"
+                            alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Among Us</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="assets/apps.59357.13895334412764328.559da51b-cee3-4463-b8c6-75819f96d69c.7038b9c7-f3b8-44d2-a1c8-8603d9d132af"
+                            alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Astroneer</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="assets/apps.53095.13850085746326678.06e2dc5c-7997-46e9-a8e6-0e48b57cb13b.jpg"
+                            alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Celeste</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="assets/apps.3830.14595226950892239.a8daf266-2756-4f3f-9606-6b7b7cef7920.jpg"
+                            alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Celeste</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="assets/apps.35593.68150164172276526.ddc374d7-ef5e-43b9-940a-bbc04440bb33.jpg"
+                            alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Celeste</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="assets/apps.25964.68749109251632061.7415fd07-15d9-4d61-941f-64c80c5c0bd5.8fab658f-e3b7-452c-afeb-ad36df7bd4b3"
+                            alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Celeste</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="assets/apps.35593.68150164172276526.ddc374d7-ef5e-43b9-940a-bbc04440bb33.jpg"
+                            alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Celeste</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="assets/apps.34695.68182501197884443.ac728a87-7bc1-4a0d-8bc6-0712072da93c.jpg"
+                            alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Celeste</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="assets/apps.20769.14071745200459129.f6415fab-b460-4210-a974-f5c4ed9bcf0e.jpg"
+                            alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Celeste</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="assets/apps.17984.13658153007394895.2c282c9c-7877-44a7-b68d-576fd158cef8.jpg"
+                            alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Celeste</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="assets/apps.28925.13528935109150980.003749fa-5cf6-4455-b03d-f44855369244.eee38d64-fd49-47c5-b777-91aa71a242e1"
+                            alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Celeste</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="assets/apps.1230.66175927222580475.7f09fde8-a46b-4c45-8584-a5e3090f8190.png"
+                            alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Celeste</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="assets/apps.30063.13589262686196899.16e3418a-cbf2-4748-9724-1c9dc9b7a0b9.jpg"
+                            alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Celeste</p>
+                </div>
+
+
+
+            </div>
+
+            <!-- Page 2 -->
+            <div id="game-gallery-page-2" class="game-gallery-container pagination-page" style="display:none;">
+                <div class="unstop">
+                    <h2 class="shape">Are you ready to play?</h2>
+                    <p class="shape2">Enjoy hundreds of hours of gameplay with an incredible catalogue of celebrated
+                        titles from long-standing franchises like Fallout, Halo, and Psychonauts, alongside
+                        fan-favourites like Ori and the Will of the Wisps and Grounded.
+
+                    </p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="assets/apps.10245.14461740201982510.10849893-1b50-4a26-b3f1-c1402fe39b3e.jpg"
+                            alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Crash™ Team Racing Nitro-Fueled</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="assets/apps.1230.66175927222580475.7f09fde8-a46b-4c45-8584-a5e3090f8190.png"
+                            alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Among Us</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="assets/apps.17703.13510798887933723.57e43f19-4066-429e-b1a2-caea56e427b4.jpg"
+                            alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Astroneer</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="assets/apps.17984.13658153007394895.2c282c9c-7877-44a7-b68d-576fd158cef8.jpg"
+                            alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Celeste</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="assets/apps.18874.70143269474194625.747ac9ac-b1f2-4257-bced-d7383c99a841.jpg"
+                            alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Celeste</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="assets/apps.20885.13814604299939965.72dfdef5-9229-464a-9658-6fa1501f617b.127d486d-3092-47dd-a9af-74cb1834ad65"
+                            alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Celeste</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="assets/apps.20885.13814604299939965.72dfdef5-9229-464a-9658-6fa1501f617b.127d486d-3092-47dd-a9af-74cb1834ad65"
+                            alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Celeste</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="assets/apps.21257.71633162879241707.7cf18b3b-9fa5-486f-9a68-067f06d50bf1.jpg"
+                            alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Celeste</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="assets/apps.23097.69886306496288395.9ec42146-6037-4440-b5c7-3a44e5213cc3.jpg"
+                            alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Crash™ Team Racing Nitro-Fueled</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="assets/apps.24333.65934155925401073.cdde9208-c05c-4015-852b-3c48d95ed87b.jpg"
+                            alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Among Us</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="assets/apps.45976.14000456863863255.e1180b2d-029d-4c02-9385-6ad73421ad63.508279c9-acdd-45b3-9321-9d8f45feb958"
+                            alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Celeste</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="assets/apps.20885.13814604299939965.72dfdef5-9229-464a-9658-6fa1501f617b.127d486d-3092-47dd-a9af-74cb1834ad65"
+                            alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Crash™ Team Racing Nitro-Fueled</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="assets/apps.20769.14071745200459129.f6415fab-b460-4210-a974-f5c4ed9bcf0e.jpg"
+                            alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Among Us</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="assets/apps.15571.68688977722932617.c18986e0-354d-49e5-a689-33d52a7432cb.jpg"
+                            alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Astroneer</p>
+                </div>
+
+            </div>
+
+            <!-- Page 3 -->
+            <div id="game-gallery-page-3" class="game-gallery-container pagination-page" style="display:none;">
+                <div class="unstop">
+                    <h2 class="shape">Are you ready to play?</h2>
+                    <p class="shape2">Enjoy hundreds of hours of gameplay with an incredible catalogue of celebrated
+                        titles from long-standing franchises like Fallout, Halo, and Psychonauts, alongside
+                        fan-favourites like Ori and the Will of the Wisps and Grounded.
+
+                    </p>
+                </div>
+
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="sky19 (10).jpeg" alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Astroneer</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="sky19 (11).jpeg" alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Celeste</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="sky19 (12).jpeg" alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Crash™ Team Racing Nitro-Fueled</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="sky19 (13).jpeg" alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Among Us</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="sky19 (14).jpeg" alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Astroneer</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="sky19 (15).jpeg" alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Celeste</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="sky19 (16).jpeg" alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Crash™ Team Racing Nitro-Fueled</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="sky19 (17).jpeg" alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Among Us</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="sky19 (18).jpeg" alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Astroneer</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="sky19 (19).jpeg" alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Celeste</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="sky (2).jpeg" alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Crash™ Team Racing Nitro-Fueled</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="sky (3).jpeg" alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Among Us</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="sky (4).jpeg" alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Astroneer</p>
+                </div>
+                <div class="game-card">
+                    <div class="image-container">
+                        <img src="sky (11).jpeg" alt="Among Us">
+                        <button class="hover-button">Play Now <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <p>Celeste</p>
+                </div>
+            </div>
+
+            <!-- Pagination Buttons -->
+            <div class="pagination-buttons">
+                <button id="prev-btn" onclick="prevPage()"><i class="fas fa-chevron-left"></i>Previous</button>
+                <button id="next-btn" onclick="nextPage()">Next<i class="fas fa-chevron-right"></i></button>
+            </div>
+        </center>
+    </section>
+    <div class="game-pass-core-container   deals-with-game-pass-green-box-container">
+        <div class="game-pass-core-left">
+            <img class="game-pass-core-logo" src="assets/76dbc5e9-ac0b-4bb0-8e27-26215ab52287.svg" alt="Game Pass Logo">
+            <h2 class="game-pass-core-title">Discover your next favorite game</h2>
+            <p>Play hundreds of high-quality games for one low monthly price.
+
+            </p>
+            <a href="#" class="game-pass-core-learn-more">JOIN NOW <span class="arrow">></span></a>
+        </div>
+        <div class="game-pass-core-right  deals-with-game-pass">
+            <img src="assets/303c0c4a-6428-4665-96ad-604a0ed808a1.jpg" alt="Game Image">
+        </div>
+    </div>
+
+
+
+
+    <div class="faq-container  faq-container-for-game-pass-core">
+        <h1 class="faqs-heading">Frequently Asked Questions</h1>
+
+        <!-- FAQ Item 1 -->
+        <div class="faq-item">
+            <button class="faq-question">
+                <span class="faqs-arrow fas fa-chevron-right"></span> <!-- Font Awesome Chevron Right -->
+                What is Game Pass Core?
+            </button>
+            <div class="faq-answer" style="display: none;">
+                <p>Game Pass Core is the evolution of Xbox Live Gold and includes access to online console multiplayer,
+                    a curated catalog of over 25 high-quality games to play on Xbox Series X|S and Xbox One consoles,
+                    member deals, and more.</p>
+            </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="faq-item">
+            <button class="faq-question">
+                <span class="faqs-arrow fas fa-chevron-right"></span> <!-- Font Awesome Chevron Right -->
+                Is Game Pass Core available in my market?
+            </button>
+            <div class="faq-answer" style="display: none;">
+                <p>
+                    Visit <a href="https://www.xbox.com/regions" class="c-hyperlink">Xbox regions</a>
+                    for details on market availability.
+
+                </p>
+            </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="faq-item">
+            <button class="faq-question">
+                <span class="faqs-arrow fas fa-chevron-right"></span> <!-- Font Awesome Chevron Right -->
+                Where do I find Game Pass games?
+            </button>
+            <div class="faq-answer" style="display: none;">
+                <p>
+                    Browse the latest games at <a href="https://www.xbox.com/apps/xbox-app-on-pc"
+                        class="c-hyperlink">Xbox app on Windows PC</a>,
+                    <a href="https://www.xbox.com/xbox-game-pass/games?=allgames" class="c-hyperlink">xbox.com</a>, on
+                    your console,
+                    or on the <a href="https://www.xbox.com/apps/xbox-app-on-mobile" class="c-hyperlink">Xbox app on
+                        mobile</a>.
+                </p>
+            </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="faq-item">
+            <button class="faq-question">
+                <span class="faqs-arrow fas fa-chevron-right"></span> <!-- Font Awesome Chevron Right -->
+                How long do I have access to games in the Game Pass catalog?
+            </button>
+            <div class="faq-answer" style="display: none;">
+                <p>
+                    Game Pass members enjoy access to high-quality games in the catalog until either the membership is
+                    canceled/expires,
+                    or a game leaves the Game Pass catalog. Game titles, number, features, and availability vary over
+                    time, by region,
+                    Game Pass plan, and platform. For an up-to-date list, please visit the
+                    <a href="https://www.xbox.com/xbox-game-pass/games" class="c-hyperlink">Game Pass catalog</a>.
+                </p>
+            </div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="faq-item">
+            <button class="faq-question">
+                <span class="faqs-arrow fas fa-chevron-right"></span> <!-- Font Awesome Chevron Right -->
+                How do I cancel Game Pass?
+            </button>
+            <div class="faq-answer" style="display: none;">
+                <p>
+                    Game Pass Ultimate members automatically receive the entitlement for EA Play on console and can
+                    browse
+                    and download games through the Game Pass experience on your console.
+                </p>
+            </div>
+        </div>
+    </div>
+    <section class="last">
+        <div class="head1">
+            <h5>Xbox Subscription Terms: </h5>
+            <p>See <a class="link-green">xbox.com/subscriptionterms.</a></p>
+        </div>
+
+        <div class="head1">
+            <h5>Promotional Offers: </h5>
+            <p class="para1">*Savings based on retail value of game.
+
+                Game Pass Availability Notice:
+                Game titles, number, features, and availability vary over time, by region, Game Pass plan, and platform.
+                See the current game library at xbox.com/xbox-game-pass/games. Learn more about supported regions at
+                xbox.com/regions.
+
+                Xbox Subscription Terms:
+                See xbox.com/subscriptionterms.</p>
+        </div>
+
+
+
+
+
+        <div class="head1">
+            <h5>Recurring Billing: </h5>
+            <p class="para1">By subscribing you are authorizing recurring payments made to Microsoft at the intervals
+                you selected, until cancelled. To stop being charged, cancel your subscription in your Microsoft account
+                (<a class="link-green"> account.microsoft.com/services</a>) or on your Xbox console, before the next
+                billing date. Charges may be increased on at least 30 days notice as described in the <a
+                    class="link-green"> Microsoft Store Terms of Sale.</a></p>
+        </div>
+
+
+
+        <div class="head1">
+            <h5>Game Pass Availability Notice:</h5>
+            <p class="para1">Game titles, number, features, and availability vary over time, by region, Game Pass plan,
+                and platform. See the current game <a class="link-green"> catalog at xbox.com/xbox-game-pass/games.</a>
+                Learn more about supported regions at <a class="link-green"> xbox.com/regions.</a></p>
+        </div>
+
+
+
+
+
+        <div class="head1">
+            <h5>Cloud gaming:</h5>
+            <p class="para1">
+                Requires Xbox Game Pass Ultimate subscription and supported controller ( both sold separately). Select
+                regions (<a class="link-green"> xbox.com/regions</a>) and devices ( <a class="link-green">
+                    xbox.com/cloud-devices</a>); streaming limits apply, server availability and wait times may vary.
+                Requires high-speed internet connection (ISP fees apply). See cloud gaming catalog (<a
+                    class="link-green"> xbox.com/play</a>).</p>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="head1">
+            <p> **Cloud playable games not included with Game Pass Ultimate are sold separately.</p>
+        </div>
+
+
+        <div class="head1">
+            <h5>Xbox All Access:</h5>
+            <p class="para1">
+                ^0% APR for 24 Months with Equal Payments. Subject to credit approval. Monthly payment is an estimate,
+                does not include taxes, and may vary from the actual minimum payment due that will be shown on your
+                Citizens Pay Line of Credit statement. Other transactions charged to your account affect overall minimum
+                payment amount. Click here (<a class="link-green"> citizensbank.com/disclosures/XAA.aspx</a>) for
+                important information about Rates and the Citizens Pay Line of Credit Agreement. Citizens Pay Line of
+                Credit Account offered by Citizens Bank, N.A. For purchases of Xbox All Access through Verizon,
+                financing provided by Affirm; see <a class="link-green"> verizon.com/gaming/xbox-all-access/.</a></p>
+        </div>
+
+    </section>
+    <div class="follow " style="padding:30px;color:#000;">
+        <span>Follow Xbox</span>
+        <i class="far fa-envelope"></i>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+
+    </div>
+    <footer class="footer">
+        <div class="footer-sections">
+            <div class="footer-column">
+                <h3>Browse</h3>
+                <ul>
+                    <li><a href="#">Xbox consoles</a></li>
+                    <li><a href="#">Xbox games</a></li>
+                    <li><a href="#">Xbox Game Pass</a></li>
+                    <li><a href="#">Xbox accessories</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Xbox News</a></li>
+                    <li><a href="#">Xbox Support</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Community Standards</a></li>
+                    <li><a href="#">Photosensitive Seizure Warning</a></li>
+                    <li><a href="#">User Research at Xbox</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Microsoft Store</h3>
+                <ul>
+                    <li><a href="#">Microsoft account</a></li>
+                    <li><a href="#">Microsoft Store Support</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Order tracking</a></li>
+                    <li><a href="#">Store locations</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Rewards</h3>
+                <ul>
+                    <li><a href="#">Rewards</a></li>
+                    <li><a href="#">Xbox Mastercard</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>For Developers</h3>
+                <ul>
+                    <li><a href="#">Games</a></li>
+                    <li><a href="#">Designed for Xbox</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-left">
+                <a href="#">English (United States)</a>
+                <div class="privacy-toggle">
+                    <input type="checkbox" id="privacy" />
+                    <label for="privacy"></label>
+                </div>
+                <a href="#">Your Privacy Choices</a>
+                <a href="#">Consumer Health Privacy</a>
+            </div>
+            <div class="footer-bottom-right">
+                <a href="#">Sitemap</a>
+                <a href="#">Contact Microsoft</a>
+                <a href="#">Privacy & Cookies</a>
+                <a href="#">Terms of use</a>
+                <a href="#">Trademarks</a>
+                <a href="#">Third Party Notices</a>
+                <a href="#">Safety & eco</a>
+                <a href="#">About our ads</a>
+                <span>© Microsoft 2024</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        let currentPage = 1;
+        const totalPages = 3;
+
+        function showPage(page) {
+            document.querySelectorAll('.pagination-page').forEach((el, index) => {
+                el.style.display = (index + 1 === page) ? 'flex' : 'none';
+            });
+        }
+
+        function nextPage() {
+            if (currentPage < totalPages) {
+                currentPage++;
+                showPage(currentPage);
+            }
+        }
+
+        function prevPage() {
+            if (currentPage > 1) {
+                currentPage--;
+                showPage(currentPage);
+            }
+        }
+
+        // Show the first page initially
+        showPage(currentPage);
+
+
+        function showGames(tabName) {
+            document.querySelectorAll('.carousel-container-cit').forEach(tab => {
+                tab.style.display = tab.classList.contains(tabName) ? 'flex' : 'none';
+            });
+
+            document.querySelectorAll('.tab-button-cit').forEach(button => {
+                button.classList.toggle('active', button.getAttribute('onclick') === `showGames('${tabName}')`);
+            });
+        }
+
+
+        const carousel = document.getElementById('carousel-cit');
+        const carouselWrapper = document.querySelector('.carousel-wrapper-cit');
+        const gap = 20; // The gap between the items
+        let itemWidth = 0;
+
+        // Function to update item width dynamically, in case of responsive layouts
+        function updateItemWidth() {
+            itemWidth = carousel.querySelector('.carousel-item-cit').offsetWidth + gap;
+        }
+
+        function scrollCarousel(direction) {
+            // Update item width in case it changes
+            updateItemWidth();
+
+            const visibleItems = Math.floor(carouselWrapper.offsetWidth / itemWidth); // Calculate the number of visible items
+            const scrollAmount = direction * itemWidth * visibleItems; // Scroll by visible items
+            carousel.scrollLeft += scrollAmount;
+        }
+
+        // Call this function on page load or window resize to ensure proper calculation
+        window.addEventListener('resize', updateItemWidth);
+
+
+
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const answer = button.nextElementSibling;
+                const arrow = button.querySelector('.faqs-arrow');
+
+                // Toggle FAQ visibility
+                if (answer.style.display === 'block') {
+                    answer.style.display = 'none';
+                    arrow.classList.remove('fa-chevron-down'); // Remove Chevron Down
+                    arrow.classList.add('fa-chevron-right');  // Add Chevron Right
+                    button.classList.remove('dotted-border'); // Remove dotted border
+                } else {
+                    answer.style.display = 'block';
+                    arrow.classList.remove('fa-chevron-right'); // Remove Chevron Right
+                    arrow.classList.add('fa-chevron-down');    // Add Chevron Down
+                    button.classList.add('dotted-border');     // Add dotted border
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
