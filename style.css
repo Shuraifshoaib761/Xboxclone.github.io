@@ -34,7 +34,7 @@ body {
     /* Stick to the top of the viewport */
     background-color: white;
     /* Optional: Background color for visibility */
-    padding: 15px 5px;
+    padding: 15px 02px;
     /* Add some padding for aesthetics */
     z-index: 1000;
     /* Ensure it stays above other elements */
