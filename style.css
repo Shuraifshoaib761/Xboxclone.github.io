@@ -2095,7 +2095,7 @@ button {
     width: 100%;
     height: 1900px;
     position: relative;
-    z-index: 0;
+    z-index: 1;
     text-align: center;
 
     background-image: url(assets/ee5c8783-68c7-440e-9346-1284220f6fbc.jpg);
