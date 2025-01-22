@@ -528,7 +528,7 @@ button {
     grid-column: 1/2;
     grid-row: 1/3;
     height: 906px;
-    background-image: url(/assets/5896210f-f312-405d-bf4a-4b92f20d646b.jpg);
+    background-image: url(assets/5896210f-f312-405d-bf4a-4b92f20d646b.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -544,7 +544,7 @@ button {
     grid-column: 1/2;
     grid-row: 1/3;
     height: 906px;
-    background-image: url(/assets/6e75b8a5-1ee9-4f0f-a7f4-5650c939fe11.jpg);
+    background-image: url(assets/6e75b8a5-1ee9-4f0f-a7f4-5650c939fe11.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -2098,7 +2098,7 @@ button {
     z-index: 0;
     text-align: center;
 
-    background-image: url(/assets/ee5c8783-68c7-440e-9346-1284220f6fbc.jpg);
+    background-image: url(assets/ee5c8783-68c7-440e-9346-1284220f6fbc.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
